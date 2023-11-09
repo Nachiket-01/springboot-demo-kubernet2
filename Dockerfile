@@ -12,3 +12,9 @@ COPY target/springboot-demo-0.0.1-SNAPSHOT.jar /springboot-demo-0.0.1-SNAPSHOT.j
 
 # Define the command to run your Spring Boot application
 CMD ["java", "-jar", "springboot-demo-0.0.1-SNAPSHOT.jar"]
+
+
+#FROM openjdk:11
+#EXPOSE 8080
+#ADD target/springboot-demo-0.0.1-SNAPSHOT.jar  kubernetass5
+#ENTRYPOINT ["java","-jar","/springboot-demo-0.0.1-SNAPSHOT.jar"]
